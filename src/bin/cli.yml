@@ -1,0 +1,31 @@
+name: kvs
+version: "1.0"
+author: xoyo24 <xoyo24@gmail.com>
+about: Does awesome things
+settings:
+  - SubcommandRequiredElseHelp
+subcommands:
+  - get:
+      about: get from kvs
+      args:
+        - KEY:
+            required: true
+            about: Key for get
+  - set:
+      about: set to kvs
+      args:
+        - KEY:
+            required: true
+            index: 1
+            about: Key for get
+
+        - VALUE:
+            required: true
+            index: 2
+            about: Value to set
+  - rm:
+      about: rm from kvs
+      args:
+        - KEY:
+            required: true
+            about: Key for get
